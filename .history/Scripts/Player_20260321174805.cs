@@ -35,27 +35,22 @@ public partial class Player : CharacterBody2D
 
         jumpBufferTimer -= dt;
 
-        // Coyote time for more forgiving jumps
         if (IsOnFloor()) {
             coyoteTimer = CoyoteTime;
         } else {
             coyoteTimer -= dt;
         }
 
-        // Gravity code for decelerating. 
         if (velocity.Y > 0) {
             velocity.Y += Gravity * FallGravityMultiplier * dt;
         } else {
             velocity.Y += Gravity * dt;
         }
 
-        // Variable jump height
         if (!Input.IsActionPressed("game_jump") && velocity.Y < 0)
         {
             velocity.Y += Gravity * (LowJumpMultiplier - 1) * dt;
         }
-
-        // 
         if (jumpBufferTimer > 0 && coyoteTimer > 0)
         {
             velocity.Y = JumpVelocity;
