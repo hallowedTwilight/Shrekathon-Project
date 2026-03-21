@@ -11,9 +11,7 @@ offset_top = 300.0
 offset_bottom = 600.0
 
 [node name="Player" parent="." unique_id=29412341 instance=ExtResource("3_4k8kt")]
-position = Vector2(65, 529)
-JumpSpeed = -1000.0
-Gravity = 2000.0
+position = Vector2(82, 525)
 
 [node name="Foreground" parent="." unique_id=1712620637 instance=ExtResource("2_4k8kt")]
 position = Vector2(0, 600)
