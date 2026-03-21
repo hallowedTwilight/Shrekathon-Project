@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shrekathon Project", "Shrekathon Project.csproj", "{C666F84D-9FB5-47E9-AD25-B1F482DF80CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C666F84D-9FB5-47E9-AD25-B1F482DF80CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C666F84D-9FB5-47E9-AD25-B1F482DF80CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C666F84D-9FB5-47E9-AD25-B1F482DF80CD}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{C666F84D-9FB5-47E9-AD25-B1F482DF80CD}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{C666F84D-9FB5-47E9-AD25-B1F482DF80CD}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{C666F84D-9FB5-47E9-AD25-B1F482DF80CD}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal
