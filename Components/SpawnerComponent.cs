@@ -65,8 +65,8 @@ public partial class SpawnerComponent : Node2D
         {
             float yOffset = _rng.RandfRange(group.Range.X, group.Range.Y);
             group.Position = new Vector2(Position.X, Position.Y + yOffset);
-
             GetParent().AddChild(group);
+            Delay = group.Delay;
         }
         else
         {

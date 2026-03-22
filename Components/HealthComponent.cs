@@ -18,4 +18,9 @@ public partial class HealthComponent : Node
 			GetTree().ChangeSceneToFile("res://Scenes/cooking.tscn");
 		}
 	}
+	public void SetHealth(float health)
+	{
+		Health = health;
+		GD.Print(Health);
+	}
 }

@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://bo1acxmmu7soj" path="res://Scenes/Game.cs" id="1_yww6h"]
 [ext_resource type="PackedScene" uid="uid://p6a113v1y35" path="res://Scenes/foreground.tscn" id="2_4k8kt"]
 [ext_resource type="PackedScene" uid="uid://ccq8sjw8ssl6b" path="res://Scenes/Player.tscn" id="3_4k8kt"]
-[ext_resource type="PackedScene" uid="uid://cmg87hcnu8mpm" path="res://Scenes/pickup.tscn" id="5_ee6ix"]
+[ext_resource type="PackedScene" uid="uid://b34f1od6s3135" path="res://Scenes/platform.tscn" id="6_7vh3k"]
 [ext_resource type="PackedScene" uid="uid://be3htuy81yju8" path="res://Components/spawner.tscn" id="6_xuw7e"]
 
 [node name="Running Scene" type="Node2D" unique_id=1827734834]
@@ -20,13 +20,12 @@ position = Vector2(0, 600)
 [node name="Player" parent="." unique_id=29412341 instance=ExtResource("3_4k8kt")]
 position = Vector2(96, 512)
 
-[node name="Pickup" parent="." unique_id=1868357995 instance=ExtResource("5_ee6ix")]
-position = Vector2(103, 355)
-quantity = 0
-
 [node name="Spawner" parent="." unique_id=1551654531 instance=ExtResource("6_xuw7e")]
 position = Vector2(1598, 311)
 Delay = 1.0
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1758688628]
 position = Vector2(559, 391)
+
+[node name="Floor" parent="." unique_id=1586296930 instance=ExtResource("6_7vh3k")]
+position = Vector2(155, 375)

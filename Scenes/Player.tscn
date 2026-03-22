@@ -11,6 +11,8 @@ size = Vector2(100, 150)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kyqiw"]
 
 [node name="Player" type="CharacterBody2D" unique_id=29412341 node_paths=PackedStringArray("JumpComponent", "HealthComponent")]
+slide_on_ceiling = false
+platform_on_leave = 2
 script = ExtResource("1_kyqiw")
 JumpComponent = NodePath("Jump Component")
 HealthComponent = NodePath("Health Component")
@@ -35,6 +37,3 @@ Health = 10.0
 [node name="Jump Component" parent="." unique_id=69034582 instance=ExtResource("4_dewec")]
 JumpVelocity = -1500.0
 Gravity = 2000.0
-
-[connection signal="body_entered" from="Area2D" to="." method="OnArea2DBodyEntered"]
-[connection signal="body_exited" from="Area2D" to="." method="OnArea2DBodyExited"]

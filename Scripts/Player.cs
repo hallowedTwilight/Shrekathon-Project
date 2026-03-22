@@ -4,9 +4,9 @@ using System;
 public partial class Player : CharacterBody2D
 {
 	[Export]
-	JumpComponent JumpComponent {get; set;}
+	public JumpComponent JumpComponent {get; set;}
 	[Export]
-	HealthComponent HealthComponent {get; set;}
+	public HealthComponent HealthComponent {get; set;}
 	[Export]
 	public int Speed = 3;
 	public override void _Input(InputEvent @event)
@@ -18,6 +18,10 @@ public partial class Player : CharacterBody2D
 	}
 	public override void _PhysicsProcess(double delta)
 	{
-		MoveAndSlide();
+		Vector2 velocity = Velocity;
+        float horizontalVelocity = velocity.X;
+        Velocity = velocity;
+        MoveAndSlide();
+        Velocity = new Vector2(horizontalVelocity, Velocity.Y);
 	}
 }
