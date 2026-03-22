@@ -9,7 +9,7 @@ public partial class Global : Node
 	[Export]
 	public float Health{get; set;} = 15f;
 	[Export]
-	public float Velocity{get; set;} = -400f;
+	public float Velocity{get; set;} = -1500f;
 	public int JumpCounter = 0;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
