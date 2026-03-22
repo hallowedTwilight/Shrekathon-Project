@@ -12,6 +12,17 @@ public partial class Cooking : Node2D
 	public override void _Process(double delta)
 	{
 		if (Input.IsActionJustPressed("game_jump")){
+			// var items = ItemManager.Instance.GetAll();
+        	// foreach (var entry in items)
+			// {
+			// 	switch(entry.key)
+			// 	{
+			// 		case Materials.Flour:
+						
+			// 		default:
+			// 			return;
+			// 	}
+			// }
 			GetTree().ChangeSceneToFile("res://Scenes/running_scene.tscn");
 			ItemManager.Instance.Clear();
 		}

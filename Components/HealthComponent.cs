@@ -15,6 +15,7 @@ public partial class HealthComponent : Node
 			GD.Print(Health);
 		}
 		else{
+			
 			GetTree().ChangeSceneToFile("res://Scenes/cooking.tscn");
 		}
 	}

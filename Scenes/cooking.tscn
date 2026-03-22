@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bmbn6irowl47b" path="res://Scenes/Cooking.cs" id="1_v6t1i"]
 [ext_resource type="Texture2D" uid="uid://bxrjuavbs8fsk" path="res://Assets/World/BG Oven.png" id="2_kqqjs"]
 [ext_resource type="PackedScene" uid="uid://bvro4a7eh7cx0" path="res://UI/cooking_ui.tscn" id="3_kqqjs"]
+[ext_resource type="AudioStream" uid="uid://vta0maq0wm36" path="res://Assets/Sound/Oven Theme.mp3" id="4_jhubm"]
 
 [node name="Cooking" type="Node2D" unique_id=1693032926]
 script = ExtResource("1_v6t1i")
@@ -14,4 +15,13 @@ offset_right = 1920.0
 offset_bottom = 1225.0
 texture = ExtResource("2_kqqjs")
 
+<<<<<<< HEAD
 [node name="CookingUI" parent="." unique_id=1380031112 instance=ExtResource("3_kqqjs")]
+=======
+[node name="Dorititio" parent="." unique_id=1868357995 instance=ExtResource("1_mihmv")]
+position = Vector2(319, 213)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1834211292]
+stream = ExtResource("4_jhubm")
+autoplay = true
+>>>>>>> refs/remotes/origin/main
