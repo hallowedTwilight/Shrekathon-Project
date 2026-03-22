@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://b2omk8g43mxh6" path="res://UI/floating_text.gd" id="1_2fk3t"]
 
 [node name="FloatingText" type="Marker2D" unique_id=1103283002]
+scale = Vector2(3, 3)
 script = ExtResource("1_2fk3t")
 
 [node name="Label" type="Label" parent="." unique_id=422236005]
