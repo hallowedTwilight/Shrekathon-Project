@@ -29,6 +29,10 @@ window/size/viewport_height=1080
 
 project/assembly_name="Shrekathon Project"
 
+[gui]
+
+theme/custom_font="uid://4tynlctq3btk"
+
 [input]
 
 game_jump={

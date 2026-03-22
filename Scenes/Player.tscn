@@ -33,6 +33,8 @@ debug_color = Color(0.85131437, 0.1700061, 0.80789137, 0.41960785)
 Health = 5.0
 
 [node name="Jump Component" parent="." unique_id=69034582 instance=ExtResource("4_dewec")]
+JumpVelocity = -1000.0
+Gravity = 2000.0
 
 [connection signal="body_entered" from="Area2D" to="." method="OnArea2DBodyEntered"]
 [connection signal="body_exited" from="Area2D" to="." method="OnArea2DBodyExited"]

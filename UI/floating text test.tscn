@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dp564dq1na2xr"]
+
+[ext_resource type="Script" uid="uid://3iqinh1ntb3i" path="res://UI/floating_text_test.gd" id="1_l6e84"]
+[ext_resource type="PackedScene" uid="uid://ig80ry8pmoek" path="res://UI/floating_text.tscn" id="2_k3rrp"]
+
+[node name="FloatingTextTest" type="Node2D" unique_id=1597976435]
+script = ExtResource("1_l6e84")
+
+[node name="FloatingText" parent="." unique_id=1103283002 instance=ExtResource("2_k3rrp")]
