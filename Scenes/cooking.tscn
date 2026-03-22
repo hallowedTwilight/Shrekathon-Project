@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://bw30d1428e551"]
 
 [ext_resource type="PackedScene" uid="uid://cmg87hcnu8mpm" path="res://Scenes/pickup.tscn" id="1_mihmv"]
+[ext_resource type="Script" uid="uid://bmbn6irowl47b" path="res://Scenes/Cooking.cs" id="1_v6t1i"]
 
 [node name="Cooking" type="Node2D" unique_id=1693032926]
+script = ExtResource("1_v6t1i")
 
 [node name="Dorititio" parent="." unique_id=1868357995 instance=ExtResource("1_mihmv")]
 position = Vector2(319, 213)
