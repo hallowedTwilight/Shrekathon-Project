@@ -8,7 +8,7 @@ public partial class Player : CharacterBody2D
     [Export]
     HealthComponent HealthComponent {get; set;}
     [Export]
-    public int Speed = 3;
+    public int Speed = 1;
     public override void _Input(InputEvent @event)
     {
         if (Input.IsActionJustPressed("game_jump"))
