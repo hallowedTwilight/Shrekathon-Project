@@ -15,7 +15,10 @@ func CreateFloatingText():
 	#floaty_text.modulate = Color(1.0, 1.0, 1.0, 1.0)
 	
 	#var amount = randi()%10 - 5
-	var amount: Array[String] = ["yippe", "wowowow"] 
+	var amount: Array[String] = ["My Name?", "Dark Gingy...", "stock image by hello aesthe", 
+	"stock image by Lisa Anna", "stock image by ​​𝕡𝕒𝕨𝕤 𝕒𝕟𝕕 𝕡𝕣𝕚𝕟𝕥𝕤:", 
+	"stock image by Olga Kudriavtseva", "stock image by Dixit Dhinakaran" , "stock image by American Heritage Chocolate"
+	, "stock image by Jasmin Egger"] 
 	floaty_text.text = amount.pick_random()
 
 	print("it's working!!!!'")
