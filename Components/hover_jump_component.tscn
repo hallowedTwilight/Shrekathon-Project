@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b8llv51uy1v2u"]
+
+[ext_resource type="Script" uid="uid://baiseca7p87qy" path="res://Components/HoverJumpComponent.cs" id="1_rcjg6"]
+
+[node name="Hover Jump Component" type="Node" unique_id=1291378938]
+script = ExtResource("1_rcjg6")

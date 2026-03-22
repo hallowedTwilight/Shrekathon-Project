@@ -5,13 +5,11 @@ public partial class Player : CharacterBody2D
 {
     [Export]
     JumpComponent JumpComponent {get; set;}
-    [Export]
-    HealthComponent HealthComponent {get; set;}
     public override void _Input(InputEvent @event)
     {
         if (Input.IsActionJustPressed("game_jump"))
         {
-            JumpComponent.RequestJump();
+            jumpBufferTimer = JumpBufferTime;
         }
     }
     public override void _PhysicsProcess(double delta)

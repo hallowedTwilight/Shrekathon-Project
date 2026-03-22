@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c1he0waur8rck"]
+
+[ext_resource type="Script" uid="uid://ddikxvh5qxyf8" path="res://Components/JumpComponent.cs" id="1_oaerm"]
+
+[node name="Jump Component" type="Node" unique_id=69034582]
+script = ExtResource("1_oaerm")

@@ -2,14 +2,18 @@
 
 [ext_resource type="Script" uid="uid://dsyh2g8v38n2t" path="res://Scripts/Player.cs" id="1_kyqiw"]
 [ext_resource type="Texture2D" uid="uid://twg7rkyxu5vm" path="res://Assets/Player.svg" id="2_gntrk"]
+[ext_resource type="PackedScene" uid="uid://chlon42bgafm4" path="res://Components/health_component.tscn" id="3_gntrk"]
+[ext_resource type="PackedScene" uid="uid://c1he0waur8rck" path="res://Components/jump_component.tscn" id="4_dewec"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dewec"]
 size = Vector2(100, 150)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kyqiw"]
 
-[node name="Player" type="CharacterBody2D" unique_id=29412341]
+[node name="Player" type="CharacterBody2D" unique_id=29412341 node_paths=PackedStringArray("JumpComponent", "HealthComponent")]
 script = ExtResource("1_kyqiw")
+JumpComponent = NodePath("Jump Component")
+HealthComponent = NodePath("Health Component")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=6455029]
 texture = ExtResource("2_gntrk")
@@ -24,6 +28,12 @@ scale = Vector2(5, 5)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1482615454]
 shape = SubResource("RectangleShape2D_kyqiw")
 debug_color = Color(0.85131437, 0.1700061, 0.80789137, 0.41960785)
+
+[node name="Health Component" parent="." unique_id=421739823 instance=ExtResource("3_gntrk")]
+Health = 10.0
+DrainRate = 1.0
+
+[node name="Jump Component" parent="." unique_id=69034582 instance=ExtResource("4_dewec")]
 
 [connection signal="body_entered" from="Area2D" to="." method="OnArea2DBodyEntered"]
 [connection signal="body_exited" from="Area2D" to="." method="OnArea2DBodyExited"]
