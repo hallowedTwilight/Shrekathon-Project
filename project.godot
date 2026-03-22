@@ -15,6 +15,10 @@ run/main_scene="uid://5xnnncyrryx6"
 config/features=PackedStringArray("4.6", "C#", "Forward Plus")
 config/icon="res://Assets/icon.svg"
 
+[autoload]
+
+Global="*uid://du16gppb181c5"
+
 [dotnet]
 
 project/assembly_name="Shrekathon Project"
