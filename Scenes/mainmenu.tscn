@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cnn38srd7lo7l" path="res://Scenes/Mainmenu.cs" id="1_pposm"]
 [ext_resource type="FontFile" uid="uid://4tynlctq3btk" path="res://Assets/Fonts/Clownie Zombies.otf" id="2_rtnl3"]
+[ext_resource type="Texture2D" uid="uid://cd1vso7t0fa7d" path="res://Assets/DarkGingy/Dark.png" id="3_lah54"]
 [ext_resource type="FontFile" uid="uid://be6va0erg1jo1" path="res://Assets/Fonts/BlackbonesDEMORegular.otf" id="3_v4pkt"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_lah54"]
@@ -10,25 +11,44 @@ font_size = 174
 
 [sub_resource type="LabelSettings" id="LabelSettings_5326e"]
 font = ExtResource("3_v4pkt")
-font_size = 143
+font_size = 116
+
+[sub_resource type="LabelSettings" id="LabelSettings_l2o7r"]
+font = ExtResource("3_v4pkt")
+font_size = 60
 
 [node name="Mainmenu" type="Node2D" unique_id=179576867]
 script = ExtResource("1_pposm")
 
 [node name="title" type="Label" parent="." unique_id=1361728192]
-offset_left = 378.0
-offset_top = 217.0
-offset_right = 1650.0
-offset_bottom = 582.0
+offset_left = 587.0
+offset_top = 81.0
+offset_right = 1866.0
+offset_bottom = 450.0
 text = "WHY OF IN FOOD 
 OUT HOT EAT"
 label_settings = SubResource("LabelSettings_lah54")
 horizontal_alignment = 1
 
+[node name="TextureRect" type="TextureRect" parent="." unique_id=410295072]
+offset_left = 68.0
+offset_top = 44.0
+offset_right = 763.0
+offset_bottom = 1023.0
+texture = ExtResource("3_lah54")
+
 [node name="Label" type="Label" parent="." unique_id=1454514483]
-offset_left = 320.0
-offset_top = 859.0
-offset_right = 1711.0
-offset_bottom = 1053.0
+offset_left = 658.0
+offset_top = 874.0
+offset_right = 1834.0
+offset_bottom = 1068.0
 text = "press space to gut cooking"
 label_settings = SubResource("LabelSettings_5326e")
+
+[node name="Label2" type="Label" parent="." unique_id=1123314032]
+offset_left = 815.0
+offset_top = 446.0
+offset_right = 1638.0
+offset_bottom = 527.0
+text = "by Rev, Riccardo, HallowedTwilight"
+label_settings = SubResource("LabelSettings_l2o7r")
