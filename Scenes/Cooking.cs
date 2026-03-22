@@ -13,5 +13,6 @@ public partial class Cooking : Node2D
 	{
 		if (Input.IsActionPressed("game_jump")){
 			GetTree().ChangeSceneToFile("res://Scenes/running_scene.tscn");
+		}
 	}
 }
