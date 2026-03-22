@@ -22,6 +22,7 @@ stretch_mode = 1
 [node name="StaticBody2D" type="StaticBody2D" parent="TextureRect" unique_id=332075259]
 position = Vector2(250, 20)
 scale = Vector2(25, 2)
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/StaticBody2D" unique_id=1236536236]
 position = Vector2(28.3, 0)

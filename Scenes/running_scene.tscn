@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://ccq8sjw8ssl6b" path="res://Scenes/Player.tscn" id="3_4k8kt"]
 [ext_resource type="PackedScene" uid="uid://be3htuy81yju8" path="res://Components/spawner.tscn" id="6_xuw7e"]
 [ext_resource type="PackedScene" uid="uid://dp564dq1na2xr" path="res://UI/floating text test.tscn" id="7_7vh3k"]
+[ext_resource type="AudioStream" uid="uid://dhcaesrxd2q72" path="res://Assets/Sound/CUBE IMPACTOR - ALL-STAR REMIX.mp3" id="8_wixte"]
 
 [node name="Running Scene" type="Node2D" unique_id=1827734834]
 script = ExtResource("1_yww6h")
@@ -23,14 +24,18 @@ metadata/_edit_use_anchors_ = true
 [node name="Foreground" parent="." unique_id=1712620637 instance=ExtResource("2_4k8kt")]
 position = Vector2(0, 887)
 
-[node name="Player" parent="." unique_id=29412341 instance=ExtResource("3_4k8kt")]
-position = Vector2(168, 759)
-
 [node name="Spawner" parent="." unique_id=1551654531 instance=ExtResource("6_xuw7e")]
 position = Vector2(1678, 620)
 Delay = 1.0
+
+[node name="Player" parent="." unique_id=29412341 instance=ExtResource("3_4k8kt")]
+position = Vector2(250, 625)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1758688628]
 position = Vector2(959, 540)
 
 [node name="FloatingTextTest" parent="." unique_id=1597976435 instance=ExtResource("7_7vh3k")]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1099994234]
+stream = ExtResource("8_wixte")
+autoplay = true

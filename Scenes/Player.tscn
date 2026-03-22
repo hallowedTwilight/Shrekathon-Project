@@ -1,26 +1,54 @@
 [gd_scene format=3 uid="uid://ccq8sjw8ssl6b"]
 
 [ext_resource type="Script" uid="uid://dsyh2g8v38n2t" path="res://Scripts/Player.cs" id="1_kyqiw"]
-[ext_resource type="Texture2D" uid="uid://twg7rkyxu5vm" path="res://Assets/Player.svg" id="2_gntrk"]
+[ext_resource type="Texture2D" uid="uid://bnbobv7cd8r6v" path="res://Assets/DarkGingy/g1.png" id="2_52ee3"]
+[ext_resource type="Texture2D" uid="uid://bm6k0b8mretwe" path="res://Assets/DarkGingy/g2.png" id="3_bhhdu"]
 [ext_resource type="PackedScene" uid="uid://chlon42bgafm4" path="res://Components/health_component.tscn" id="3_gntrk"]
 [ext_resource type="PackedScene" uid="uid://c1he0waur8rck" path="res://Components/jump_component.tscn" id="4_dewec"]
+[ext_resource type="Texture2D" uid="uid://b1g6ul10k4xkr" path="res://Assets/DarkGingy/g3.png" id="4_megsn"]
+[ext_resource type="Texture2D" uid="uid://cuun8k3qp2811" path="res://Assets/DarkGingy/g4.png" id="5_yoq75"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ksbbd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_52ee3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_bhhdu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_megsn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_yoq75")
+}],
+"loop": true,
+"name": &"run",
+"speed": 12.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dewec"]
-size = Vector2(100, 150)
+size = Vector2(100, 304)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kyqiw"]
 
 [node name="Player" type="CharacterBody2D" unique_id=29412341 node_paths=PackedStringArray("JumpComponent", "HealthComponent")]
+collision_mask = 3
 slide_on_ceiling = false
 platform_on_leave = 2
 script = ExtResource("1_kyqiw")
 JumpComponent = NodePath("Jump Component")
 HealthComponent = NodePath("Health Component")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=6455029]
-texture = ExtResource("2_gntrk")
+[node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=880942422]
+sprite_frames = SubResource("SpriteFrames_ksbbd")
+animation = &"run"
+autoplay = "run"
+frame_progress = 0.19656056
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=530584936]
+position = Vector2(0, 58)
 shape = SubResource("RectangleShape2D_dewec")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1140747274]
