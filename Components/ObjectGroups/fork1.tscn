@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bew60wydby7wy"]
+
+[ext_resource type="Script" uid="uid://c5ctxv5cmjluf" path="res://Components/ObjectGroups/ObjectGroup.cs" id="1_iu1jx"]
+[ext_resource type="PackedScene" uid="uid://cne38h2au7krf" path="res://Scenes/obstacle.tscn" id="1_qa6js"]
+
+[node name="Fork" type="Node2D" unique_id=1048991317]
+script = ExtResource("1_iu1jx")
+Range = Vector2(300, 350)
+Delay = 3.5
+
+[node name="Obstacle" parent="." unique_id=2037477463 instance=ExtResource("1_qa6js")]

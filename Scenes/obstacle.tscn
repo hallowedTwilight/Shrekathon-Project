@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cne38h2au7krf"]
+
+[ext_resource type="Script" uid="uid://xb3oqm4iorcv" path="res://Scripts/Obstacles.cs" id="1_aubd6"]
+[ext_resource type="Texture2D" uid="uid://damepkbh0oavu" path="res://Assets/Obstacles/Obstacle_Fork.png" id="2_vcivv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tyhon"]
+size = Vector2(500, 2000)
+
+[node name="Obstacle" type="Area2D" unique_id=2037477463]
+scale = Vector2(0.25, 0.25)
+script = ExtResource("1_aubd6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=915854337]
+texture = ExtResource("2_vcivv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=235806599]
+shape = SubResource("RectangleShape2D_tyhon")

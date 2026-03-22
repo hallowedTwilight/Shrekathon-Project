@@ -5,7 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://p6a113v1y35" path="res://Scenes/foreground.tscn" id="2_4k8kt"]
 [ext_resource type="Texture2D" uid="uid://bacrjt1wi6uys" path="res://Assets/World/Background_.png" id="2_7vh3k"]
 [ext_resource type="PackedScene" uid="uid://ccq8sjw8ssl6b" path="res://Scenes/Player.tscn" id="3_4k8kt"]
-[ext_resource type="PackedScene" uid="uid://b34f1od6s3135" path="res://Scenes/platform.tscn" id="6_7vh3k"]
 [ext_resource type="PackedScene" uid="uid://be3htuy81yju8" path="res://Components/spawner.tscn" id="6_xuw7e"]
 
 [node name="Running Scene" type="Node2D" unique_id=1827734834]
@@ -27,9 +26,8 @@ position = Vector2(0, 887)
 position = Vector2(168, 759)
 
 [node name="Spawner" parent="." unique_id=1551654531 instance=ExtResource("6_xuw7e")]
-position = Vector2(1678, 620)
+position = Vector2(2000, 620)
 Delay = 1.0
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1758688628]
-
 position = Vector2(959, 540)

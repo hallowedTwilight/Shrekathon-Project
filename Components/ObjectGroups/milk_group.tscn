@@ -7,6 +7,7 @@
 script = ExtResource("1_be6m1")
 Speed = -500.0
 Range = Vector2(-300, 0)
+Delay = 3.0
 
 [node name="Pickup2" parent="." unique_id=1868357995 instance=ExtResource("2_ufel0")]
 material = 2

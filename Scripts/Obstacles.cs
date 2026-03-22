@@ -5,7 +5,7 @@ public partial class Obstacles : Area2D
 {
     [Export]
     public int Damage {get; set;} = 1;
-    	public override void _Ready()
+    public override void _Ready()
 	{
 		BodyEntered += OnBodyEntered;
 	}
