@@ -11,7 +11,7 @@ public partial class Cooking : Node2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-		if (Input.IsActionPressed("game_jump")){
+		if (Input.IsActionJustPressed("game_jump")){
 			GetTree().ChangeSceneToFile("res://Scenes/running_scene.tscn");
 		}
 	}

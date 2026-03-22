@@ -14,8 +14,9 @@ func CreateFloatingText():
 	### White
 	#floaty_text.modulate = Color(1.0, 1.0, 1.0, 1.0)
 	
-	var amount = randi()%10 - 5
-	floaty_text.text = amount
+	#var amount = randi()%10 - 5
+	var amount: Array[String] = ["yippe", "wowowow"] 
+	floaty_text.text = amount.pick_random()
 
 	print("it's working!!!!'")
 	

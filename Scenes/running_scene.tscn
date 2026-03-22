@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bacrjt1wi6uys" path="res://Assets/World/Background_.png" id="2_7vh3k"]
 [ext_resource type="PackedScene" uid="uid://ccq8sjw8ssl6b" path="res://Scenes/Player.tscn" id="3_4k8kt"]
 [ext_resource type="PackedScene" uid="uid://be3htuy81yju8" path="res://Components/spawner.tscn" id="6_xuw7e"]
+[ext_resource type="PackedScene" uid="uid://dp564dq1na2xr" path="res://UI/floating text test.tscn" id="7_7vh3k"]
 
 [node name="Running Scene" type="Node2D" unique_id=1827734834]
 script = ExtResource("1_yww6h")
@@ -31,3 +32,5 @@ Delay = 1.0
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1758688628]
 position = Vector2(959, 540)
+
+[node name="FloatingTextTest" parent="." unique_id=1597976435 instance=ExtResource("7_7vh3k")]

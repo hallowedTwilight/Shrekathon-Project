@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dhcaesrxd2q72"
+path="res://.godot/imported/CUBE IMPACTOR - ALL-STAR REMIX.mp3-dbfb2596c2727018163b713c17ed6a51.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sound/CUBE IMPACTOR - ALL-STAR REMIX.mp3"
+dest_files=["res://.godot/imported/CUBE IMPACTOR - ALL-STAR REMIX.mp3-dbfb2596c2727018163b713c17ed6a51.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

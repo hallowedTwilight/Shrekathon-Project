@@ -1,6 +1,34 @@
 [gd_scene format=3 uid="uid://cp6sxn4r8oxjg"]
 
 [ext_resource type="Script" uid="uid://cnn38srd7lo7l" path="res://Scenes/Mainmenu.cs" id="1_pposm"]
+[ext_resource type="FontFile" uid="uid://4tynlctq3btk" path="res://Assets/Fonts/Clownie Zombies.otf" id="2_rtnl3"]
+[ext_resource type="FontFile" uid="uid://be6va0erg1jo1" path="res://Assets/Fonts/BlackbonesDEMORegular.otf" id="3_v4pkt"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_lah54"]
+font = ExtResource("2_rtnl3")
+font_size = 174
+
+[sub_resource type="LabelSettings" id="LabelSettings_5326e"]
+font = ExtResource("3_v4pkt")
+font_size = 143
 
 [node name="Mainmenu" type="Node2D" unique_id=179576867]
 script = ExtResource("1_pposm")
+
+[node name="title" type="Label" parent="." unique_id=1361728192]
+offset_left = 378.0
+offset_top = 217.0
+offset_right = 1650.0
+offset_bottom = 582.0
+text = "WHY OF IN FOOD 
+OUT HOT EAT"
+label_settings = SubResource("LabelSettings_lah54")
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="." unique_id=1454514483]
+offset_left = 320.0
+offset_top = 859.0
+offset_right = 1711.0
+offset_bottom = 1053.0
+text = "press space to gut cooking"
+label_settings = SubResource("LabelSettings_5326e")
