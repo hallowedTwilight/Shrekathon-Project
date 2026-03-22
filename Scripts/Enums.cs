@@ -1,6 +1,6 @@
 public enum Materials
 {
-    Flour,
-    Sugar,
-    Milk
+	Flour,
+	Sugar,
+	Milk
 }
