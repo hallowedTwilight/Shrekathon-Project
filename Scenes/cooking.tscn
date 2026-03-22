@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bw30d1428e551"]
 
-[ext_resource type="PackedScene" uid="uid://cmg87hcnu8mpm" path="res://Scenes/dorititio.tscn" id="1_mihmv"]
+[ext_resource type="PackedScene" uid="uid://cmg87hcnu8mpm" path="res://Scenes/pickup.tscn" id="1_mihmv"]
 
 [node name="Cooking" type="Node2D" unique_id=1693032926]
 

@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://bo1acxmmu7soj" path="res://Scenes/Game.cs" id="1_yww6h"]
 [ext_resource type="PackedScene" uid="uid://p6a113v1y35" path="res://Scenes/foreground.tscn" id="2_4k8kt"]
 [ext_resource type="PackedScene" uid="uid://ccq8sjw8ssl6b" path="res://Scenes/Player.tscn" id="3_4k8kt"]
+[ext_resource type="PackedScene" uid="uid://cmg87hcnu8mpm" path="res://Scenes/pickup.tscn" id="5_ee6ix"]
 
 [node name="Running Scene" type="Node2D" unique_id=1827734834]
 script = ExtResource("1_yww6h")
@@ -17,3 +18,6 @@ position = Vector2(105, 525)
 
 [node name="Foreground" parent="." unique_id=1712620637 instance=ExtResource("2_4k8kt")]
 position = Vector2(0, 600)
+
+[node name="Pickup" parent="." unique_id=1868357995 instance=ExtResource("5_ee6ix")]
+position = Vector2(103, 355)
