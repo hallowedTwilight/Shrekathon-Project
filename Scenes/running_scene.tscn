@@ -4,7 +4,10 @@
 [ext_resource type="Script" uid="uid://bo1acxmmu7soj" path="res://Scenes/Game.cs" id="1_yww6h"]
 [ext_resource type="PackedScene" uid="uid://p6a113v1y35" path="res://Scenes/foreground.tscn" id="2_4k8kt"]
 [ext_resource type="PackedScene" uid="uid://ccq8sjw8ssl6b" path="res://Scenes/Player.tscn" id="3_4k8kt"]
+[ext_resource type="PackedScene" uid="uid://chlon42bgafm4" path="res://Components/health_component.tscn" id="5_7lwf5"]
 [ext_resource type="PackedScene" uid="uid://cmg87hcnu8mpm" path="res://Scenes/pickup.tscn" id="5_ee6ix"]
+[ext_resource type="PackedScene" uid="uid://c1he0waur8rck" path="res://Components/jump_component.tscn" id="6_wixte"]
+[ext_resource type="PackedScene" uid="uid://be3htuy81yju8" path="res://Components/spawner.tscn" id="6_xuw7e"]
 
 [node name="Running Scene" type="Node2D" unique_id=1827734834]
 script = ExtResource("1_yww6h")
@@ -13,11 +16,26 @@ script = ExtResource("1_yww6h")
 offset_bottom = 600.0
 metadata/_edit_use_anchors_ = true
 
-[node name="Player" parent="." unique_id=29412341 instance=ExtResource("3_4k8kt")]
-position = Vector2(105, 525)
-
 [node name="Foreground" parent="." unique_id=1712620637 instance=ExtResource("2_4k8kt")]
 position = Vector2(0, 600)
 
+[node name="Player" parent="." unique_id=29412341 node_paths=PackedStringArray("JumpComponent", "HealthComponent") instance=ExtResource("3_4k8kt")]
+position = Vector2(96, 512)
+JumpComponent = NodePath("Jump Component2")
+HealthComponent = NodePath("Health Component2")
+
+[node name="Health Component2" parent="Player" unique_id=421739823 instance=ExtResource("5_7lwf5")]
+Health = 15.0
+DrainRate = 0.1
+
+[node name="Jump Component2" parent="Player" unique_id=69034582 instance=ExtResource("6_wixte")]
+JumpVelocity = -1000.0
+Gravity = 2000.0
+
 [node name="Pickup" parent="." unique_id=1868357995 instance=ExtResource("5_ee6ix")]
 position = Vector2(103, 355)
+quantity = 0
+
+[node name="Spawner" parent="." unique_id=1551654531 instance=ExtResource("6_xuw7e")]
+position = Vector2(1598, 311)
+Delay = 1.0

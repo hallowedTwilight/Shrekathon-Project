@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://drinp07tgloeh"]
+
+[ext_resource type="Script" uid="uid://c5ctxv5cmjluf" path="res://Components/ObjectGroups/ObjectGroup.cs" id="1_be6m1"]
+[ext_resource type="PackedScene" uid="uid://cmg87hcnu8mpm" path="res://Scenes/pickup.tscn" id="2_ufel0"]
+
+[node name="DoritoGroup" type="Node2D" unique_id=1246100047]
+script = ExtResource("1_be6m1")
+Speed = -500.0
+Range = Vector2(-300, 0)
+
+[node name="Pickup2" parent="." unique_id=1868357995 instance=ExtResource("2_ufel0")]
+material = 2
+rotation = 1.5707964
+material = 2
+
+[node name="Pickup" parent="." unique_id=565463431 instance=ExtResource("2_ufel0")]
+material = 2
+position = Vector2(124, 0)
+rotation = 1.5707964
+material = 2
