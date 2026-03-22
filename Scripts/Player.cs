@@ -9,12 +9,12 @@ public partial class Player : CharacterBody2D
 	public HealthComponent HealthComponent {get; set;}
 	[Export]
 	public int Speed = 3;
-    public override void _Ready()
-    {
-       Global global = Global.Instance;
+	public override void _Ready()
+	{
+	   Global global = Global.Instance;
 	   JumpComponent.JumpVelocity = global.Velocity;
 	   HealthComponent.Health = global.Health;
-    }
+	}
 
 	public override void _Input(InputEvent @event)
 	{
@@ -26,9 +26,9 @@ public partial class Player : CharacterBody2D
 	public override void _PhysicsProcess(double delta)
 	{
 		Vector2 velocity = Velocity;
-        float horizontalVelocity = velocity.X;
-        Velocity = velocity;
-        MoveAndSlide();
-        Velocity = new Vector2(horizontalVelocity, Velocity.Y);
+		float horizontalVelocity = velocity.X;
+		Velocity = velocity;
+		MoveAndSlide();
+		Velocity = new Vector2(horizontalVelocity, Velocity.Y);
 	}
 }

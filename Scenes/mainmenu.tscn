@@ -1,9 +1,15 @@
 [gd_scene format=3 uid="uid://cp6sxn4r8oxjg"]
 
 [ext_resource type="Script" uid="uid://cnn38srd7lo7l" path="res://Scenes/Mainmenu.cs" id="1_pposm"]
+[ext_resource type="Texture2D" uid="uid://34njfepmqimu" path="res://Assets/World/BG Scroll.png" id="2_5326e"]
 [ext_resource type="FontFile" uid="uid://4tynlctq3btk" path="res://Assets/Fonts/Clownie Zombies.otf" id="2_rtnl3"]
+[ext_resource type="Texture2D" uid="uid://cm1nin0p3gjiv" path="res://Assets/World/Oven.png" id="3_l2o7r"]
 [ext_resource type="Texture2D" uid="uid://cd1vso7t0fa7d" path="res://Assets/DarkGingy/Dark.png" id="3_lah54"]
 [ext_resource type="FontFile" uid="uid://be6va0erg1jo1" path="res://Assets/Fonts/BlackbonesDEMORegular.otf" id="3_v4pkt"]
+[ext_resource type="Texture2D" uid="uid://bnbobv7cd8r6v" path="res://Assets/DarkGingy/g1.png" id="7_eybw1"]
+[ext_resource type="Texture2D" uid="uid://bm6k0b8mretwe" path="res://Assets/DarkGingy/g2.png" id="8_hu3kb"]
+[ext_resource type="Texture2D" uid="uid://b1g6ul10k4xkr" path="res://Assets/DarkGingy/g3.png" id="9_vv4ip"]
+[ext_resource type="Texture2D" uid="uid://cuun8k3qp2811" path="res://Assets/DarkGingy/g4.png" id="10_awugs"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_lah54"]
 font = ExtResource("2_rtnl3")
@@ -17,8 +23,42 @@ font_size = 116
 font = ExtResource("3_v4pkt")
 font_size = 60
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_c7wuu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_eybw1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_hu3kb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_vv4ip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_awugs")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
 [node name="Mainmenu" type="Node2D" unique_id=179576867]
 script = ExtResource("1_pposm")
+
+[node name="TextureRect3" type="TextureRect" parent="." unique_id=1938915223]
+offset_left = -2104.0
+offset_top = -133.0
+offset_right = 3401.0
+offset_bottom = 796.0
+texture = ExtResource("2_5326e")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1409118282]
+offset_left = 384.0
+offset_top = -585.0
+offset_right = 2560.0
+offset_bottom = 1110.0
+texture = ExtResource("3_l2o7r")
 
 [node name="title" type="Label" parent="." unique_id=1361728192]
 offset_left = 587.0
@@ -31,10 +71,10 @@ label_settings = SubResource("LabelSettings_lah54")
 horizontal_alignment = 1
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=410295072]
-offset_left = 68.0
-offset_top = 44.0
-offset_right = 763.0
-offset_bottom = 1023.0
+offset_left = 70.0
+offset_top = 17.0
+offset_right = 765.0
+offset_bottom = 996.0
 texture = ExtResource("3_lah54")
 
 [node name="Label" type="Label" parent="." unique_id=1454514483]
@@ -52,3 +92,8 @@ offset_right = 1638.0
 offset_bottom = 527.0
 text = "by Rev, Riccardo, HallowedTwilight"
 label_settings = SubResource("LabelSettings_l2o7r")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1735790183]
+position = Vector2(1703, 651)
+sprite_frames = SubResource("SpriteFrames_c7wuu")
+autoplay = "default"
