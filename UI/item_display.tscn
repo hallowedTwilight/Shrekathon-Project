@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://e60sa6bncel4"]
+
+[ext_resource type="Script" uid="uid://d070cu05mfpj8" path="res://UI/ItemDisplay.cs" id="1_5y2fe"]
+[ext_resource type="Texture2D" uid="uid://b20rin5cfwg75" path="res://Assets/Collectables/Flour.png" id="1_kj72q"]
+[ext_resource type="FontFile" uid="uid://be6va0erg1jo1" path="res://Assets/Fonts/BlackbonesDEMORegular.otf" id="2_5y2fe"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6sxke"]
+line_spacing = 0.0
+font = ExtResource("2_5y2fe")
+font_size = 32
+font_color = Color(0, 0, 0, 1)
+
+[node name="ItemDisplay" type="MarginContainer" unique_id=1005996701 node_paths=PackedStringArray("TextureRect", "Text")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1620.0
+offset_bottom = -730.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5y2fe")
+TextureRect = NodePath("ColorRect/VBoxContainer/TextureRect")
+Text = NodePath("ColorRect/VBoxContainer/Label")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=935808760]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect" unique_id=211047240]
+layout_mode = 0
+offset_right = 307.0
+offset_bottom = 350.0
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="ColorRect/VBoxContainer" unique_id=1267040408]
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("1_kj72q")
+expand_mode = 3
+
+[node name="Label" type="Label" parent="ColorRect/VBoxContainer" unique_id=1871996681]
+layout_mode = 2
+label_settings = SubResource("LabelSettings_6sxke")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true

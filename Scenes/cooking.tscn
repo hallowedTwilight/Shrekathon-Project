@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bw30d1428e551"]
 
-[ext_resource type="PackedScene" uid="uid://cmg87hcnu8mpm" path="res://Scenes/pickup.tscn" id="1_mihmv"]
 [ext_resource type="Script" uid="uid://bmbn6irowl47b" path="res://Scenes/Cooking.cs" id="1_v6t1i"]
 [ext_resource type="Texture2D" uid="uid://bxrjuavbs8fsk" path="res://Assets/World/BG Oven.png" id="2_kqqjs"]
+[ext_resource type="PackedScene" uid="uid://bvro4a7eh7cx0" path="res://UI/cooking_ui.tscn" id="3_kqqjs"]
 
 [node name="Cooking" type="Node2D" unique_id=1693032926]
 script = ExtResource("1_v6t1i")
@@ -14,5 +14,4 @@ offset_right = 1920.0
 offset_bottom = 1225.0
 texture = ExtResource("2_kqqjs")
 
-[node name="Dorititio" parent="." unique_id=1868357995 instance=ExtResource("1_mihmv")]
-position = Vector2(319, 213)
+[node name="CookingUI" parent="." unique_id=1380031112 instance=ExtResource("3_kqqjs")]

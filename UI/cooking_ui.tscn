@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://bvro4a7eh7cx0"]
+
+[ext_resource type="Texture2D" uid="uid://cwuuvpypfbo2d" path="res://Assets/Floor.svg" id="1_2fwl4"]
+[ext_resource type="Script" uid="uid://c3x2227hrs4mq" path="res://UI/CookingUi.cs" id="1_31n0u"]
+[ext_resource type="PackedScene" uid="uid://e60sa6bncel4" path="res://UI/item_display.tscn" id="2_mysw8"]
+
+[node name="CookingUI" type="Control" unique_id=1380031112 node_paths=PackedStringArray("Box")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_31n0u")
+ItemDisplayScene = ExtResource("2_mysw8")
+Box = NodePath("MarginContainer/TextureRect/HBoxContainer")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=800670075]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 60.0
+offset_right = 1880.0
+offset_bottom = 240.0
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer" unique_id=243436162]
+layout_mode = 2
+texture = ExtResource("1_2fwl4")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/TextureRect" unique_id=1103147857]
+layout_mode = 0
+offset_right = 1840.0
+offset_bottom = 180.0

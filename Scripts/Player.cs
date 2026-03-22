@@ -9,6 +9,13 @@ public partial class Player : CharacterBody2D
 	public HealthComponent HealthComponent {get; set;}
 	[Export]
 	public int Speed = 3;
+    public override void _Ready()
+    {
+       Global global = Global.Instance;
+	   JumpComponent.JumpVelocity = global.Velocity;
+	   HealthComponent.Health = global.Health;
+    }
+
 	public override void _Input(InputEvent @event)
 	{
 		if (Input.IsActionJustPressed("game_jump"))
