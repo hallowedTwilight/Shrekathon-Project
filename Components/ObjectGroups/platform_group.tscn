@@ -7,6 +7,5 @@
 script = ExtResource("1_m613q")
 Speed = -500.0
 Range = Vector2(-100, 100)
-Delay = 8.0
 
 [node name="Floor" parent="." unique_id=1586296930 instance=ExtResource("2_itlc2")]
