@@ -4,16 +4,20 @@
 [ext_resource type="Script" uid="uid://bo1acxmmu7soj" path="res://Scenes/Game.cs" id="1_yww6h"]
 [ext_resource type="PackedScene" uid="uid://p6a113v1y35" path="res://Scenes/foreground.tscn" id="2_4k8kt"]
 [ext_resource type="PackedScene" uid="uid://ccq8sjw8ssl6b" path="res://Scenes/Player.tscn" id="3_4k8kt"]
+[ext_resource type="PackedScene" uid="uid://b8llv51uy1v2u" path="res://Components/hover_jump_component.tscn" id="4_ee6ix"]
 
 [node name="Running Scene" type="Node2D" unique_id=1827734834]
 script = ExtResource("1_yww6h")
 
 [node name="Background" parent="." unique_id=240521771 instance=ExtResource("1_5ff58")]
-offset_top = 300.0
 offset_bottom = 600.0
+metadata/_edit_use_anchors_ = true
 
-[node name="Player" parent="." unique_id=29412341 instance=ExtResource("3_4k8kt")]
+[node name="Player" parent="." unique_id=29412341 node_paths=PackedStringArray("JumpComponent") instance=ExtResource("3_4k8kt")]
 position = Vector2(105, 525)
+JumpComponent = NodePath("Hover Jump Component")
+
+[node name="Hover Jump Component" parent="Player" unique_id=1291378938 instance=ExtResource("4_ee6ix")]
 
 [node name="Foreground" parent="." unique_id=1712620637 instance=ExtResource("2_4k8kt")]
 position = Vector2(0, 600)
