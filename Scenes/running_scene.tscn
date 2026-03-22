@@ -3,12 +3,18 @@
 [ext_resource type="PackedScene" uid="uid://f2c7jqfqpl4j" path="res://Scenes/background.tscn" id="1_5ff58"]
 [ext_resource type="Script" uid="uid://bo1acxmmu7soj" path="res://Scenes/Game.cs" id="1_yww6h"]
 [ext_resource type="PackedScene" uid="uid://p6a113v1y35" path="res://Scenes/foreground.tscn" id="2_4k8kt"]
+[ext_resource type="Texture2D" uid="uid://bacrjt1wi6uys" path="res://Assets/World/Background_.png" id="2_7vh3k"]
 [ext_resource type="PackedScene" uid="uid://ccq8sjw8ssl6b" path="res://Scenes/Player.tscn" id="3_4k8kt"]
 [ext_resource type="PackedScene" uid="uid://cmg87hcnu8mpm" path="res://Scenes/pickup.tscn" id="5_ee6ix"]
 [ext_resource type="PackedScene" uid="uid://be3htuy81yju8" path="res://Components/spawner.tscn" id="6_xuw7e"]
 
 [node name="Running Scene" type="Node2D" unique_id=1827734834]
 script = ExtResource("1_yww6h")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=358310486]
+offset_right = 1921.0
+offset_bottom = 894.0
+texture = ExtResource("2_7vh3k")
 
 [node name="Background" parent="." unique_id=240521771 instance=ExtResource("1_5ff58")]
 offset_bottom = 600.0

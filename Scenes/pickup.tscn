@@ -1,17 +1,20 @@
 [gd_scene format=3 uid="uid://cmg87hcnu8mpm"]
 
 [ext_resource type="Script" uid="uid://ds8sjhjmr670h" path="res://Scripts/Pickup.cs" id="1_cya6u"]
-[ext_resource type="Texture2D" uid="uid://br26eh5i2rxgj" path="res://Assets/Triangle.svg" id="1_p6hkt"]
+[ext_resource type="Texture2D" uid="uid://b20rin5cfwg75" path="res://Assets/Collectables/Flour.png" id="2_cya6u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lcjqc"]
-size = Vector2(100, 100)
+size = Vector2(80, 88)
 
 [node name="Pickup" type="Area2D" unique_id=1868357995]
 script = ExtResource("1_cya6u")
 quantity = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1860289542]
-texture = ExtResource("1_p6hkt")
+position = Vector2(2.2649765e-06, 0.500005)
+scale = Vector2(0.19493176, 0.16031747)
+texture = ExtResource("2_cya6u")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1600512612]
+position = Vector2(1, -3)
 shape = SubResource("RectangleShape2D_lcjqc")
