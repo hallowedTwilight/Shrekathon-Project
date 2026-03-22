@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c3tvf3d6l4l4x"
+path="res://.godot/imported/Jump 3 Master.mp3-864dac7791cf5d9c286ec2479bf71702.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sound/Jump 3 Master.mp3"
+dest_files=["res://.godot/imported/Jump 3 Master.mp3-864dac7791cf5d9c286ec2479bf71702.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

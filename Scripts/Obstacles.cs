@@ -3,9 +3,9 @@ using System;
 
 public partial class Obstacles : Area2D
 {
-    [Export]
-    public int Damage {get; set;} = 1;
-    public override void _Ready()
+	[Export]
+	public int Damage {get; set;} = 1;
+	public override void _Ready()
 	{
 		BodyEntered += OnBodyEntered;
 	}
@@ -13,9 +13,9 @@ public partial class Obstacles : Area2D
 	{
 		if (body is CharacterBody2D && body.Name == "Player")
 		{
-            Player p = body as Player;
-            HealthComponent health = p.HealthComponent;
-            health.SetHealth(health.Health - Damage);
+			Player p = body as Player;
+			HealthComponent health = p.HealthComponent;
+			health.SetHealth(health.Health - Damage);
 			QueueFree();
 		}
 	}

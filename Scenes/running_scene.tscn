@@ -8,6 +8,17 @@
 [ext_resource type="PackedScene" uid="uid://be3htuy81yju8" path="res://Components/spawner.tscn" id="6_xuw7e"]
 [ext_resource type="PackedScene" uid="uid://dp564dq1na2xr" path="res://UI/floating text test.tscn" id="7_7vh3k"]
 [ext_resource type="AudioStream" uid="uid://dhcaesrxd2q72" path="res://Assets/Sound/CUBE IMPACTOR - ALL-STAR REMIX.mp3" id="8_wixte"]
+[ext_resource type="AudioStream" uid="uid://dkktidyqq3x6s" path="res://Assets/Sound/Jump 1 Master.mp3" id="9_7fqtp"]
+[ext_resource type="AudioStream" uid="uid://dsgrswyg7gmhb" path="res://Assets/Sound/Jump 2 Master.mp3" id="10_du1s6"]
+[ext_resource type="AudioStream" uid="uid://c3tvf3d6l4l4x" path="res://Assets/Sound/Jump 3 Master.mp3" id="11_at47j"]
+[ext_resource type="Script" uid="uid://bfg7n03ss6jtm" path="res://Scenes/player_sounds.gd" id="12_jv3om"]
+
+[sub_resource type="AudioStreamPlaylist" id="AudioStreamPlaylist_q8eeg"]
+shuffle = true
+stream_count = 3
+stream_0 = ExtResource("9_7fqtp")
+stream_1 = ExtResource("10_du1s6")
+stream_2 = ExtResource("11_at47j")
 
 [node name="Running Scene" type="Node2D" unique_id=1827734834]
 script = ExtResource("1_yww6h")
@@ -39,3 +50,8 @@ position = Vector2(959, 540)
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1099994234]
 stream = ExtResource("8_wixte")
 autoplay = true
+
+[node name="PlayerSounds" type="AudioStreamPlayer2D" parent="." unique_id=576558170]
+unique_name_in_owner = true
+stream = SubResource("AudioStreamPlaylist_q8eeg")
+script = ExtResource("12_jv3om")
