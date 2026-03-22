@@ -21,18 +21,18 @@ offset_bottom = 600.0
 metadata/_edit_use_anchors_ = true
 
 [node name="Foreground" parent="." unique_id=1712620637 instance=ExtResource("2_4k8kt")]
-position = Vector2(0, 600)
+position = Vector2(0, 887)
 
 [node name="Player" parent="." unique_id=29412341 instance=ExtResource("3_4k8kt")]
-position = Vector2(96, 512)
+position = Vector2(168, 759)
 
 [node name="Pickup" parent="." unique_id=1868357995 instance=ExtResource("5_ee6ix")]
 position = Vector2(103, 355)
 quantity = 0
 
 [node name="Spawner" parent="." unique_id=1551654531 instance=ExtResource("6_xuw7e")]
-position = Vector2(1598, 311)
+position = Vector2(1678, 620)
 Delay = 1.0
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1758688628]
-position = Vector2(559, 391)
+position = Vector2(959, 540)

@@ -11,6 +11,6 @@ shader_parameter/scroll_speed = 1.0
 material = SubResource("ShaderMaterial_4aqey")
 offset_right = 5505.0
 offset_bottom = 792.0
-scale = Vector2(0.52, 0.52)
+scale = Vector2(0.78, 0.78)
 texture = ExtResource("2_pojwb")
 stretch_mode = 1

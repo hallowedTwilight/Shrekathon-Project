@@ -2,9 +2,15 @@
 
 [ext_resource type="PackedScene" uid="uid://cmg87hcnu8mpm" path="res://Scenes/pickup.tscn" id="1_mihmv"]
 [ext_resource type="Script" uid="uid://bmbn6irowl47b" path="res://Scenes/Cooking.cs" id="1_v6t1i"]
+[ext_resource type="Texture2D" uid="uid://bxrjuavbs8fsk" path="res://Assets/World/BG Oven.png" id="2_kqqjs"]
 
 [node name="Cooking" type="Node2D" unique_id=1693032926]
 script = ExtResource("1_v6t1i")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=733025031]
+offset_right = 1918.0
+offset_bottom = 1279.0
+texture = ExtResource("2_kqqjs")
 
 [node name="Dorititio" parent="." unique_id=1868357995 instance=ExtResource("1_mihmv")]
 position = Vector2(319, 213)
