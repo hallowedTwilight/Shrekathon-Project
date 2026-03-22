@@ -24,7 +24,7 @@ public partial class HealthComponent : Node
         }
         else{
 			// _AddASceneManually();
-            GD.Print("Moving Scene");
+            GD.Print(FileAccess.FileExists("res://Scenes/cooking.tscn"));
             GetTree().ChangeSceneToFile("res://Scenes/cooking.tscn");
         }
     }

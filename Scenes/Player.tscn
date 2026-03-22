@@ -30,8 +30,7 @@ shape = SubResource("RectangleShape2D_kyqiw")
 debug_color = Color(0.85131437, 0.1700061, 0.80789137, 0.41960785)
 
 [node name="Health Component" parent="." unique_id=421739823 instance=ExtResource("3_gntrk")]
-Health = 10.0
-DrainRate = 1.0
+Health = 5.0
 
 [node name="Jump Component" parent="." unique_id=69034582 instance=ExtResource("4_dewec")]
 

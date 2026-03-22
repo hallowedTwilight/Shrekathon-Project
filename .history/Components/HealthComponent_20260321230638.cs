@@ -18,13 +18,12 @@ public partial class HealthComponent : Node
 
     public override void _Process(double delta)
     {
-        if (Health > 0)
+        if (Health > 0)GetTree().ChangeSceneToFile("res://Scenes/cooking.tscn");
         {
             Health -= DrainRate * (float)delta;
         }
         else{
 			// _AddASceneManually();
-            GD.Print("Moving Scene");
             GetTree().ChangeSceneToFile("res://Scenes/cooking.tscn");
         }
     }

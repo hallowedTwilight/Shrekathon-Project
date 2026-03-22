@@ -4,3 +4,4 @@
 
 [node name="Health Component" type="Node" unique_id=421739823]
 script = ExtResource("1_c2t11")
+Health = 2.0
