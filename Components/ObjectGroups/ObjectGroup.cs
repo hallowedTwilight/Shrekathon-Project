@@ -12,5 +12,9 @@ public partial class ObjectGroup : Node2D
         Vector2 position = Position;
         position.X += Speed * (float)delta;
         Position = position;
+        if(Position.X < -350)
+        {
+            QueueFree();
+        }
     }
 }

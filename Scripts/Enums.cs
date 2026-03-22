@@ -4,3 +4,9 @@ public enum Materials
 	Sugar,
 	Milk
 }
+public enum Stats
+{
+	JumpVelocity,
+	Gravity,
+	Health
+}
