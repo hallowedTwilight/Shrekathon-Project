@@ -1,6 +1,11 @@
 [gd_scene format=3 uid="uid://p6a113v1y35"]
 
+[ext_resource type="Shader" uid="uid://dwsck7vg1h7wc" path="res://Scenes/background.gdshader" id="1_8xv7p"]
 [ext_resource type="Texture2D" uid="uid://dblibkuj7ng54" path="res://Assets/World/Foreground.png" id="1_lx4o8"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cj5ll"]
+shader = ExtResource("1_8xv7p")
+shader_parameter/scroll_speed = 0.3
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lx4o8"]
 size = Vector2(76.6, 20)
@@ -8,6 +13,7 @@ size = Vector2(76.6, 20)
 [node name="Foreground" type="Node2D" unique_id=1712620637]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1795102097]
+material = SubResource("ShaderMaterial_cj5ll")
 offset_right = 1918.0
 offset_bottom = 194.0
 texture = ExtResource("1_lx4o8")
