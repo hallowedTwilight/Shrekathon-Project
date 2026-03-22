@@ -18,6 +18,7 @@ config/icon="res://Assets/icon.svg"
 [autoload]
 
 Global="*uid://du16gppb181c5"
+ItemManager="*uid://bhmoify5sagwk"
 
 [display]
 

@@ -2,7 +2,6 @@ using Godot;
 using System;
 public partial class HealthComponent : Node
 {
-    // public Node cookingphase;
     [Export]
     public float Health = 10;
     [Export]
