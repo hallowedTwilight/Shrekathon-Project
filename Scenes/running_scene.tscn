@@ -5,10 +5,14 @@
 [ext_resource type="PackedScene" uid="uid://p6a113v1y35" path="res://Scenes/foreground.tscn" id="2_4k8kt"]
 [ext_resource type="Texture2D" uid="uid://bacrjt1wi6uys" path="res://Assets/World/Background_.png" id="2_7vh3k"]
 [ext_resource type="PackedScene" uid="uid://ccq8sjw8ssl6b" path="res://Scenes/Player.tscn" id="3_4k8kt"]
+[ext_resource type="PackedScene" uid="uid://py8165hle87i" path="res://Components/ObjectGroups/dorito_group.tscn" id="6_q8eeg"]
 [ext_resource type="PackedScene" uid="uid://be3htuy81yju8" path="res://Components/spawner.tscn" id="6_xuw7e"]
 [ext_resource type="PackedScene" uid="uid://dp564dq1na2xr" path="res://UI/floating text test.tscn" id="7_7vh3k"]
+[ext_resource type="PackedScene" uid="uid://bew60wydby7wy" path="res://Components/ObjectGroups/fork1.tscn" id="7_plko1"]
+[ext_resource type="PackedScene" uid="uid://drinp07tgloeh" path="res://Components/ObjectGroups/milk_group.tscn" id="8_ci408"]
 [ext_resource type="AudioStream" uid="uid://dhcaesrxd2q72" path="res://Assets/Sound/CUBE IMPACTOR - ALL-STAR REMIX.mp3" id="8_wixte"]
 [ext_resource type="AudioStream" uid="uid://dkktidyqq3x6s" path="res://Assets/Sound/Jump 1 Master.mp3" id="9_7fqtp"]
+[ext_resource type="PackedScene" uid="uid://bi25l6jl0w3ie" path="res://Components/ObjectGroups/platform_group.tscn" id="9_m60uv"]
 [ext_resource type="AudioStream" uid="uid://dsgrswyg7gmhb" path="res://Assets/Sound/Jump 2 Master.mp3" id="10_du1s6"]
 [ext_resource type="AudioStream" uid="uid://c3tvf3d6l4l4x" path="res://Assets/Sound/Jump 3 Master.mp3" id="11_at47j"]
 [ext_resource type="Script" uid="uid://bfg7n03ss6jtm" path="res://Scenes/player_sounds.gd" id="12_jv3om"]
@@ -38,6 +42,7 @@ position = Vector2(0, 887)
 [node name="Spawner" parent="." unique_id=1551654531 instance=ExtResource("6_xuw7e")]
 position = Vector2(2000, 620)
 Delay = 1.0
+Scenes = Array[PackedScene]([ExtResource("6_q8eeg"), ExtResource("7_plko1"), ExtResource("8_ci408"), ExtResource("9_m60uv")])
 
 [node name="Player" parent="." unique_id=29412341 instance=ExtResource("3_4k8kt")]
 position = Vector2(250, 625)

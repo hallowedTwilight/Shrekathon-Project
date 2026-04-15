@@ -7,42 +7,15 @@ public partial class SpawnerComponent : Node2D
     [Export] public float Delay { get; set; } = 5.0f;
     private float _delayTimer;
     private RandomNumberGenerator _rng = new RandomNumberGenerator();
-    private string _path = "res://Components/ObjectGroups";
-    private List<PackedScene> _scenes = new List<PackedScene>();
+    [Export] public PackedScene[] Scenes;
     public override void _Ready()
     {
         _rng.Randomize();
-        var dir = DirAccess.Open(_path);
-        if (dir == null)
-        {
-            GD.PushError("Failed to open directory: " + _path);
-            return;
-        }
-        dir.ListDirBegin();
-        while (true)
-        {
-            string fileName = dir.GetNext();
-            if (fileName == "")
-                break;
-            if (dir.CurrentIsDir())
-                continue;
-            if (fileName.EndsWith(".tscn"))
-            {
-                string fullPath = _path + "/" + fileName;
-                var scene = ResourceLoader.Load<PackedScene>(fullPath);
-                if (scene != null)
-                {
-                    _scenes.Add(scene);
-                    GD.Print("Loaded: " + fullPath);
-                }
-                else
-                {
-                    GD.PushError("Failed to load: " + fullPath);
-                }
-            }
-        }
-        dir.ListDirEnd();
         _delayTimer = 0f;
+        if (Scenes == null || Scenes.Length == 0)
+        {
+            GD.PushWarning("SpawnerComponent: No scenes assigned!");
+        }
     }
     public override void _Process(double delta)
     {
@@ -50,10 +23,11 @@ public partial class SpawnerComponent : Node2D
         if (_delayTimer >= Delay)
         {
             _delayTimer = 0f;
-            if (_scenes.Count > 0)
+
+            if (Scenes != null && Scenes.Length > 0)
             {
-                int index = _rng.RandiRange(0, _scenes.Count - 1);
-                Spawn(_scenes[index]);
+                int index = _rng.RandiRange(0, Scenes.Length - 1);
+                Spawn(Scenes[index]);
             }
         }
     }

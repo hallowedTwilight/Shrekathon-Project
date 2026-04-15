@@ -5,6 +5,7 @@
 
 [node name="Fork" type="Node2D" unique_id=1048991317]
 script = ExtResource("1_iu1jx")
+Speed = -1000.0
 Range = Vector2(300, 350)
 Delay = 3.5
 
